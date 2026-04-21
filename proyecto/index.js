@@ -4,6 +4,8 @@ const port = 3000
 
 const productos = require('./data/productos.json')
 
+app.use(express.json())
+
 app.get('/usuarios', (req,res) => {
     const usuarios = [{nombre:'Juan',edad:20},
                        {nombre:'Paco',edad:20},
